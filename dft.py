@@ -24,9 +24,9 @@ x += np.sin((2*np.pi*x_values / 64.0)) # 64 - 128Hz
 X = list()
 
 for k in range(0, N):
-	X.append(np.complex(0, 0))
+	X.append(0+0j)
 	for n in range(0, N):
-		X[k] += x[n] * np.exp(np.complex(0, -2*np.pi*k*n/N))
+		X[k] += x[n] * np.exp(np.imag(0, -2*np.pi*k*n/N))
 
 
 
